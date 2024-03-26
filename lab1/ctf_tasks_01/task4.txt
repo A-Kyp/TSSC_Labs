@@ -1,0 +1,3 @@
+ct1 = 'ZmxhZ3tnMWZfb3JfajFmfQ=='
+
+decoded = flag{g1f_or_j1f}
