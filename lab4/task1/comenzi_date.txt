@@ -1,0 +1,36 @@
+===========================
+======== TASK2 ============
+===========================
+# install jhom=the-ripepr
+sudo apt-get install john -y
+
+# get password hashes
+sudo cat /etc/shadow
+sudo unshadow /etc/passwd /etc/shadow > mypasswd
+
+
+# crack it
+john -w=/usr/share/john/password.lst --format=crypt mypasswd
+john -show mypasswd
+
+
+===========================
+======== TASK4 ============
+===========================
+
+#lock acc and delete password
+sudo passwd -l -d dani.mocanu
+
+===========================
+======== TASK6 ============
+===========================
+
+# use hashid to determine the type
+# sau crack the hash here https://crackstation.net
+
+
+
+
+
+
+
