@@ -1,0 +1,2 @@
+sudo apt update
+sudo apt install libidn11-dev librtmp-dev libssl-dev libcrypto++-dev libkrb5-dev libldap2-dev libnghttp2-dev libpsl-dev libssh-dev libzstd-dev libbrotli-dev

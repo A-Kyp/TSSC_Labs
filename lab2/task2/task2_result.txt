@@ -1,0 +1,1 @@
+bytearray(b'small_numbers_are_not_safe')

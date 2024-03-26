@@ -1,0 +1,18 @@
+sudo tar czf etc-backup-2023.tar.gz -C /etc .
+
+dd if=/dev/urandom of=.mysecretpass bs=20 count=1
+
+openssl enc -aes-256-cbc -e -pass file:./.mysecretpass -in ./etc-backup-2023.tar.gz -out ./opensslenc.out
+
+openssl genrsa -out  openssl_genrsa.out
+
+openssl rsa -pubout -out ./rsapub.out -in ./openssl_genrsa.out
+
+openssl pkeyutl -in .mysecretpass -out backup-secret.enc -pubin -inkey rsapub.out -encrypt
+
+openssl pkeyutl -decrypt -inkey openssl_genrsa.out -in backup-secret.enc -out secret_recovered.dec
+
+openssl enc -aes-256-cbc -d -in opensslenc.out -pass file:./secret_recovered.dec -out backup-
+decrypted.tar.gz
+
+diff backup-decrypted.tar.gz etc-backup-2023.tar.gz
