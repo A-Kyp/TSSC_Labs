@@ -6,7 +6,7 @@
 
 ... there is a flag in there... yeah right ... literally, a "flag"
 
-```bash
+```console
 $ cat /etc/secret/flag
 # ISC{y1Z33}
 ```
@@ -17,7 +17,7 @@ i have no idea for this one
 * **_Flag 3_**
 
 din hacker (numai el are permisiune de read in afara de root)
-```BASH
+```console
 # sus
 $ readelf -a /usr/local/bin/giff-me-flag | grep FLAG
 # 0x000000006ffffffb (FLAGS_1)            Flags: NOW PIE
