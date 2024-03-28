@@ -7,7 +7,7 @@
 ... there is a flag in there... yeah right ... literally, a "flag"
 
 ```bash
-$ cat /etc/secret/flag
+cat /etc/secret/flag
 # ISC{y1Z33}
 ```
 * **_Flag 2_**
@@ -19,10 +19,10 @@ i have no idea for this one
 din hacker (numai el are permisiune de read in afara de root)
 ```shell
 # sus
-$ readelf -a /usr/local/bin/giff-me-flag | grep FLAG
+readelf -a /usr/local/bin/giff-me-flag | grep FLAG
 # 0x000000006ffffffb (FLAGS_1)            Flags: NOW PIE
 
-$ strings /usr/local/bin/giff-me-flag
+strings /usr/local/bin/giff-me-flag
 # apar niste fraze printre care si secventa
 # What do you say?
 # PLEASE!!!11oneone   ----- yesss this is it!!!!!!!!
