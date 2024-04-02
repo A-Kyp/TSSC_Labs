@@ -12,7 +12,7 @@ $ cat /etc/secret/flag
 ```
 * **_Flag 2_**
 
-[i have no idea for this one]
+[i have no idea for this one] - not anymore :)
 ```bash
 $ cd /usr/local/isc/.hidden/
 $ for i in {100..10000}; do cat ".$i" 2>/dev/null; done
@@ -57,7 +57,14 @@ La userul *rekt0r* avem un tutorial
 
     tldr *decanu* poate folosi sudo in locul lui *rekt0r* ca sa execute script ul cu  read...
 
-La *decanu* avem un folder ascuns cu parola [xaX4xaxa4444]
+La *decanu* avem un folder ascuns cu parola [xaX4xaxa4444] -> citibil din mihai ca e in grupul de unstpb
+
+din decanu
+
+```bash
+$ sudo -u rekt0r ./read-bank-accounts ../../.not_for_your_eyes
+# ISC{1st0pp4bl3_m1h41_r3kt0r}
+```
 
 La *t4l3nt* avem un fisier ascuns cu flags - nvm e pt taskul 4
 
