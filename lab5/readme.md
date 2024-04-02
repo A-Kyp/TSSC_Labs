@@ -12,7 +12,12 @@ $ cat /etc/secret/flag
 ```
 * **_Flag 2_**
 
-i have no idea for this one
+[i have no idea for this one]
+```bash
+$ cd /usr/local/isc/.hidden/
+$ for i in {100..10000}; do cat ".$i" 2>/dev/null; done
+# ISC{14mt3h31337}
+```
 
 * **_Flag 3_**
 
