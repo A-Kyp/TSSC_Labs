@@ -1,4 +1,4 @@
-# Lab 7 Operating System ecurity
+# Lab 7 Operating System Security
 
 ## Setup
 ```bash
@@ -73,9 +73,11 @@ Se completeaza scriptul de python
 ```bash
  gcc rop.c -o vuln32 -fno-stack-protector -m32 -g -no-pie
  sudo -H python3 -m pip install ROPgadget
- ROPgadget --binary vuln32
+ ROPgadget --binary vuln32 | grep pop
 ```
 
-1. se completeaza arg1 si arg2 din codul de c
-2. se completeaza al doilea chain ca in lab
-3. se ruleaza cu python
+In scriptul de python:
+1. se ia adresa unui ROPgadget din outputul comenzii anterioare
+2. se completeaza arg1 si arg2 din codul de c
+3. se completeaza al doilea chain ca in lab
+4. se ruleaza cu python
