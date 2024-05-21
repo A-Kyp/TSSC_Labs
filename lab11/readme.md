@@ -25,4 +25,15 @@ gpg --decrypt /tmp/secret_file.txt.gpg
 din green
 ```bash
 gpg --output /tmp/green/signed-red.gpg --sign /tmp/red_key.txt
+
+```
+
+```bash
+gpg --export --armor red@cs.pub.ro > /tmp/red_signed.txt
+gpg --signe-key red@cs.pub.ro
+```
+
+pt tor
+```bash
+ssh -J fep -L 9050:localhost:9050 openstack
 ```
